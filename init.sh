@@ -31,6 +31,8 @@ git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 # python
 PIP_PATH=`which pip`
 sudo $PIP_PATH install --upgrade pip 
+
+PIP_PATH=`which pip`
 sudo $PIP_PATH install chainer
 sudo $PIP_PATH install numpy 
 sudo $PIP_PATH install scikit-learn
@@ -50,7 +52,7 @@ if [ ! -f $PHANTOMJS_PATH ]; then
 		if catch "e"; then
 			echo "you've failed to download phantomjs. do it again later."
 		elif; then
-			echo "you've finished settings. open vim and set :NeoBundleInstall"
+			echo "you've finished settings."
 		fi
 	}
 fi
