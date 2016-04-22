@@ -1,3 +1,9 @@
+# git
+git config --global alias.br branch
+git config --global alias.cm commit
+git config --global alias.co checkout
+git config --global alias.st status
+
 # zsh
 sudo yum -y install zsh
 
