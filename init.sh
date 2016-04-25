@@ -1,7 +1,13 @@
 #!/bin/zsh
 
-# zsh
+# install zsh
 sudo yum -y install zsh
 
 ZSH_PATH=`which zsh`
-$ZSH_PATH init_with_zsh.sh
+HERE="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd)"
+
+$ZSH_PATH $HERE/init_zsh.sh
+$ZSH_PATH $HERE/init_git.sh
+$ZSH_PATH $HERE/init_vim.sh
+$ZSH_PATH $HERE/init_python.sh
+$ZSH_PATH $HERE/init_phantomjs.sh
