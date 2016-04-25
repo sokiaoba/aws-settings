@@ -1,6 +1,6 @@
 #!/bin/zsh
 
-# install zsh
+sudo yum update
 sudo yum -y install zsh
 
 ZSH_PATH=`which zsh`
