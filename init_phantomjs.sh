@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+autoload -Uz catch
+autoload -Uz throw
+
 PHANTOMJS_PATH="/usr/local/bin/phantomjs"
 if [ ! -f $PHANTOMJS_PATH ]; then
 	cd /usr/local/src/
@@ -16,5 +19,5 @@ if [ ! -f $PHANTOMJS_PATH ]; then
 		fi
 	}
 else
-	echo "seems you already installed phantomjs."
+	echo "seems you've already installed phantomjs."
 fi
